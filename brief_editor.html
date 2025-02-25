@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brief Editor - AI Brief Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>AI Brief Tool</h2>
+        <ul>
+            <li><a href="index.html">Analyst Dashboard</a></li>
+            <li><a href="editor_dashboard.html">Editor Dashboard</a></li>
+            <li><a href="source_overview.html">Sources</a></li>
+            <li><a href="client_list.html">Clients</a></li>
+            <li><a href="product_templates.html">Products</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Editing Brief: Market Trends Q4</h1>
+        <div style="display: flex;">
+            <div style="flex: 3;">
+                <input type="text" value="Market Trends Q4" style="width: 100%; margin-bottom: 20px;" readonly>
+                <div style="border: 1px solid #ccc; padding: 20px; min-height: 300px;">
+                    <p>Sample AI-generated content here. <span class="ai-indicator">[AI]</span></p>
+                </div>
+                <a href="preview.html" class="btn-primary" style="margin-top: 20px;">Preview</a>
+            </div>
+            <div style="flex: 1; margin-left: 20px;">
+                <h2>Version Control</h2>
+                <ul>
+                    <li>V1 - Oct 12, 2023 by Analyst1</li>
+                    <li>V2 - Oct 13, 2023 by Analyst1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

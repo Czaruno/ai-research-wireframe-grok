@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Source - AI Brief Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>AI Brief Tool</h2>
+        <ul>
+            <li><a href="index.html">Analyst Dashboard</a></li>
+            <li><a href="editor_dashboard.html">Editor Dashboard</a></li>
+            <li><a href="source_overview.html">Sources</a></li>
+            <li><a href="client_list.html">Clients</a></li>
+            <li><a href="product_templates.html">Products</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Edit Source</h1>
+        <form class="source-form">
+            <label for="source-name">Source Name</label>
+            <input type="text" id="source-name" value="Industry Reports Database" required>
+            <label for="source-type">Source Type</label>
+            <select id="source-type">
+                <option>Database</option>
+                <option>API</option>
+                <option>RSS Feed</option>
+                <option>Web Scraper</option>
+            </select>
+            <label for="source-url">URL</label>
+            <input type="url" id="source-url" value="https://industryreports.example.com" required>
+            <label for="source-credentials">Credentials (if required)</label>
+            <input type="text" id="source-credentials" placeholder="Enter API key or credentials">
+            <div class="form-actions">
+                <a href="source_overview.html" class="btn-secondary">Cancel</a>
+                <button type="submit" class="btn-primary">Save Changes</button>
+            </div>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

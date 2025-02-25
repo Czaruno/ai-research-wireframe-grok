@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #1A365D;    /* Navy blue */
+    --secondary-color: #2C7A7B;  /* Teal */
+    --background-color: #F7FAFC; /* Light gray */
+    --text-color: #333;          /* Dark text */
+    --white: #FFFFFF;            /* White */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Sidebar */
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    font-family: 'Inter', sans-serif;
+    margin: 0 0 20px 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Cards */
+.card {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-tertiary {
+    background-color: #E0E0E0;
+    color: var(--text-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Forms */
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form select, form input[type="text"], form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Grid for Cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* AI Indicator */
+.ai-indicator {
+    color: var(--secondary-color);
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Success Message */
+.success-message {
+    color: var(--text-color);
+    padding: 20px;
+    background-color: var(--white);
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.success-message p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Action Buttons */
+.action-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}

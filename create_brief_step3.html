@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Brief - Step 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>AI Brief Tool</h2>
+        <ul>
+            <li><a href="index.html">Analyst Dashboard</a></li>
+            <li><a href="editor_dashboard.html">Editor Dashboard</a></li>
+            <li><a href="source_overview.html">Sources</a></li>
+            <li><a href="client_list.html">Clients</a></li>
+            <li><a href="product_templates.html">Products</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Step 3: Configure AI Parameters and Preferences</h1>
+        <form>
+            <label for="tone">Select Tone</label>
+            <select id="tone">
+                <option>Formal</option>
+                <option>Conversational</option>
+                <option>Technical</option>
+                <option>Casual</option>
+            </select>
+            <label for="length">Content Length</label>
+            <select id="length">
+                <option>Short (300-500 words)</option>
+                <option>Medium (500-1000 words)</option>
+                <option>Long (1000+ words)</option>
+            </select>
+            <label for="preferences">Specific Preferences</label>
+            <textarea id="preferences" placeholder="Enter any specific instructions or preferences for the AI"></textarea>
+            <a href="create_brief_step2.html" class="btn-secondary">Back</a>
+            <a href="create_brief_step4.html" class="btn-primary">Next</a>
+            <a href="index.html" class="btn-tertiary">Cancel</a>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
